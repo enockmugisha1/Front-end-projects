@@ -20,11 +20,10 @@ The app is built using **HTML, CSS, and JavaScript** and provides an intuitive u
 ## Deployment
 This application is deployed on two web servers and uses a load balancer to distribute traffic:
 
-- **Web Server 1 (Web-01):** `44.212.32.161`
-- **Web Server 2 (Web-02):** `54.205.34.198`
-- **Load Balancer (Lb-01):** `44.201.224.249`
+- **Web Server 1 (Web-01):** `44.203.113.108`
+- **Web Server 2 (Web-02):** `44.211.139.41`
+- **Load Balancer (Lb-01):** `44.203.120.15`
 
-The app can also be accessed at: **[enock.tech](http://enock.tech)** (currently not secured, HTTPS will be added soon).
 
 ## Installation & Setup
 To run the application locally:
