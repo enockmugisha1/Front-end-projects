@@ -1,73 +1,55 @@
-# Weather Forecast Application
+# Weather App
 
 ## Overview
+This Weather App is a web application that allows users to search for a city and retrieve real-time weather data along with its time zone. The application utilizes two external APIs:
 
-I created this Weather Forecast Application to provide real-time weather updates based on city input. It fetches weather data from the OpenWeatherMap API and displays key weather details, including temperature, humidity, wind speed, and weather conditions with dynamic icons. The goal was to make it user-friendly, responsive, and lightweight.
+- [OpenWeatherMap API](https://openweathermap.org/api) for weather data.
+- [TimeZoneDB API](https://timezonedb.com/api) for time zone information.
+
+The app is built using **HTML, CSS, and JavaScript** and provides an intuitive user experience with real-time weather updates.
 
 ## Features
+- Search for any city worldwide to get live weather updates.
+- Display current temperature, weather conditions, and humidity.
+- Show the city's local time based on its time zone.
+- Display weather icons that change based on the current weather conditions (e.g., sunny, cloudy, rainy).
+- Indicate if it is raining or experiencing other weather conditions.
+- Show wind speed in real-time.
+- Responsive design for desktop and mobile users.
 
-- 🌍 **Search by City:** Enter a city name to get the latest weather updates.
-- ⛅ **Real-time Weather Updates:** Fetches live data from the OpenWeatherMap API.
-- 🌦 **Dynamic Weather Icons:** Displays weather conditions with changing icons.
-- 📍 **Geolocation Support:** Detects the user's location for automatic weather updates.
-- 📱 **Responsive Design:** Works smoothly on desktop, tablet, and mobile devices.
-- ⚡ **Fast & Lightweight:** Built using HTML, CSS, and JavaScript for efficiency.
+## Deployment
+This application is deployed on two web servers and uses a load balancer to distribute traffic:
 
-## Technologies Used
+- **Web Server 1 (Web-01):** `44.212.32.161`
+- **Web Server 2 (Web-02):** `54.205.34.198`
+- **Load Balancer (Lb-01):** `44.201.224.249`
 
-- **Frontend:** HTML, CSS, JavaScript
-- **API:** OpenWeatherMap API
-- **Deployment:** Web Server 1 & Web Server 2
-- **Load Balancing:** Nginx to efficiently distribute traffic between servers
+The app can also be accessed at: **[enock.tech](http://enock.tech)** (currently not secured, HTTPS will be added soon).
 
-## Deployment Details
-
-I deployed the application on two web servers (Web Server 1 & Web Server 2) and set up a load balancer (Nginx) to manage incoming requests. This setup ensures:
-
-- Even request distribution to prevent overloading a single server
-- High availability and better performance
-- Reliable access, even if one server goes down
-
-## How to Use
-
-1. Open the application in your web browser.
-2. Enter a city name in the search box.
-3. Click the search button to fetch weather data.
-4. View real-time weather conditions, including temperature, humidity, wind speed, and a weather icon.
-
-## Setup & Installation
+## Installation & Setup
+To run the application locally:
 
 1. Clone the repository:
    ```sh
    git clone https://github.com/enockmugisha1/Front-end-projects.git
    ```
-2. Navigate to the weather project folder:
+2. Navigate to the project directory:
    ```sh
-   cd Front-end-projects/whether
+   cd weather-app
    ```
-3. Open `whether.html` in a browser to run the application locally.
+3. Open `whether.html` in your browser.
 
-## API Configuration
+## API Usage & Acknowledgment
+This project integrates two free and publicly available APIs:
+- **[OpenWeatherMap API](https://openweathermap.org/api)** for real-time weather forecasts.
+- **[TimeZoneDB API](https://timezonedb.com/api)** for time zone data.
 
-To use the OpenWeatherMap API, get an API key and replace it in your JavaScript file:
-
-```js
-const config = {
-    apiUrl: "https://api.openweathermap.org/data/2.5/weather",
-    apiKey: "YOUR_API_KEY"
-};
-```
+A huge thanks to the developers of these APIs for making weather and time zone data accessible for free.
 
 ## Future Improvements
+- Implement HTTPS for secure access.
+- Enhance UI/UX with better design and animations.
 
-- Add a 5-day weather forecast feature
-- Implement dark mode support
-- Include additional weather details like UV index and air quality
-
-## Acknowledgments
-
-- OpenWeatherMap for providing the weather data
-- Nginx for efficient load balancing
-
-Enjoy forecasting the weather! 🌤️
+## Contact
+For any questions or feedback, feel free to reach out via email at **enock.mugisha2004@gmail.com**.
 
