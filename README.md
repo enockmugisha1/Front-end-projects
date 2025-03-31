@@ -1,33 +1,36 @@
 # Weather App
 
 ## Overview
-This Weather App is a web application that allows users to search for a city and retrieve real-time weather data along with its time zone. The application utilizes two external APIs:
+The Weather App is a web application designed to provide real-time weather updates and local time information for any city worldwide. It integrates two external APIs to deliver accurate and up-to-date weather and time zone data:
 
-- [OpenWeatherMap API](https://openweathermap.org/api) for weather data.
-- [TimeZoneDB API](https://timezonedb.com/api) for time zone information.
+- **[OpenWeatherMap API](https://openweathermap.org/api)** – Provides real-time weather data.
+- **[TimeZoneDB API](https://timezonedb.com/api)** – Retrieves the local time based on the city's time zone.
 
-The app is built using **HTML, CSS, and JavaScript** and provides an intuitive user experience with real-time weather updates.
+Built using **HTML, CSS, and JavaScript**, the application offers an intuitive user experience with real-time updates and a responsive design.
 
 ## Features
-- Search for any city worldwide to get live weather updates.
+- Search for any city worldwide to obtain live weather updates.
 - Display current temperature, weather conditions, and humidity.
 - Show the city's local time based on its time zone.
-- Display weather icons that change based on the current weather conditions (e.g., sunny, cloudy, rainy).
-- Indicate if it is raining or experiencing other weather conditions.
-- Show wind speed in real-time.
-- Responsive design for desktop and mobile users.
+- Display dynamic weather icons corresponding to current conditions (e.g., sunny, cloudy, rainy).
+- Indicate special weather conditions such as rain or storms.
+- Display real-time wind speed.
+- Fully responsive design optimized for desktop and mobile users.
 
 ## Deployment
-This application is deployed on two web servers and uses a load balancer to distribute traffic:
+The application is deployed across two web servers, with a load balancer ensuring efficient traffic distribution. The load balancer is secured and accessible via HTTPS.
 
 - **Web Server 1 (Web-01):** `44.212.32.161`
 - **Web Server 2 (Web-02):** `54.205.34.198`
 - **Load Balancer (Lb-01):** `44.201.224.249`
 
-The app can also be accessed at: **[enock.tech](http://enock.tech)** (currently not secured, HTTPS will be added soon).
+### Access the Application
+You can access the Weather App securely via HTTPS:
+
+➡️ **[https://www.enock.tech/](https://www.enock.tech/)**
 
 ## Installation & Setup
-To run the application locally:
+To run the application locally, follow these steps:
 
 1. Clone the repository:
    ```sh
@@ -37,19 +40,24 @@ To run the application locally:
    ```sh
    cd weather-app
    ```
-3. Open `whether.html` in your browser.
+3. Ensure you have API keys from OpenWeatherMap and TimeZoneDB. Create a configuration file (`config.js`) to store them securely:
+   ```js
+   // config.js (Not included in the repository for security reasons)
+   const API_KEYS = {
+       weather: "YOUR_OPENWEATHERMAP_API_KEY",
+       timezone: "YOUR_TIMEZONEDB_API_KEY"
+   };
+   ```
+4. Open `whether.html` in your web browser.
 
 ## API Usage & Acknowledgment
-This project integrates two free and publicly available APIs:
-- **[OpenWeatherMap API](https://openweathermap.org/api)** for real-time weather forecasts.
-- **[TimeZoneDB API](https://timezonedb.com/api)** for time zone data.
+This project leverages two publicly available APIs:
+- **[OpenWeatherMap API](https://openweathermap.org/api)** – Provides real-time weather forecasts.
+- **[TimeZoneDB API](https://timezonedb.com/api)** – Retrieves time zone data.
 
-A huge thanks to the developers of these APIs for making weather and time zone data accessible for free.
-
-## Future Improvements
-- Implement HTTPS for secure access.
-- Enhance UI/UX with better design and animations.
+A special thanks to the developers of these APIs for making real-time weather and time zone data accessible.
 
 ## Contact
-For any questions or feedback, feel free to reach out via email at **enock.mugisha2004@gmail.com**.
+For any inquiries or feedback, feel free to reach out via email at **enock.mugisha2004@gmail.com** or **e.mugisha4@alustudent.com**.
+
 
