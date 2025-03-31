@@ -60,4 +60,3 @@ A special thanks to the developers of these APIs for making real-time weather an
 ## Contact
 For any inquiries or feedback, feel free to reach out via email at **enock.mugisha2004@gmail.com** or **e.mugisha4@alustudent.com**.
 
-
